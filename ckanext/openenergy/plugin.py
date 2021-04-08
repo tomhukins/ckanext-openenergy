@@ -3,7 +3,7 @@
 import os
 from logging import getLogger
 
-from pylons import request
+from ckan.plugins.toolkit import request
 
 from ckan.plugins import implements, SingletonPlugin
 from ckan.plugins import IConfigurer

@@ -9,8 +9,8 @@ from ckan.plugins import implements, SingletonPlugin
 from ckan.plugins import IConfigurer
 from ckan.plugins import IRoutes
 
-from ckan.lib.base import render
-import ckan.plugins as plugins
+#from ckan.lib.base import render
+#import ckan.plugins as plugins
 
 import routes.mapper
 
@@ -91,9 +91,9 @@ class OpenenergyPlugin(SingletonPlugin):
         return route_map
 
 
-class ExtraPagesController(plugins.toolkit.BaseController):
-    def changelog(self):
-        return render('changelog.html')
-    
-    def request_data(self):
-        return render('request_data.html')
+#class ExtraPagesController(plugins.toolkit.BaseController):
+#    def changelog(self):
+#        return render('changelog.html')
+#
+#    def request_data(self):
+#        return render('request_data.html')
